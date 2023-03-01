@@ -15,7 +15,7 @@ body,html {
     overflow-x: hidden;
 }
 header {
-    height: 80vh;
+    height: 65vh;
     background: url(https://lh3.googleusercontent.com/p/AF1QipN42QddTPqhBOiIMBKcEq-O__PtsHDaUW2ioFPD=s680-w680-h510);
     background-position: center;
     background-attachment: initial;
@@ -28,7 +28,7 @@ header:before {
     display: block;
     position: absolute;
     top: 6.55rem; 
-    height: 68.5vh;
+    height: 53.5vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -60,7 +60,7 @@ header:before {
 }
 
 .under-header{
-    height: 10rem;
+    height: 6rem;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -82,8 +82,79 @@ header:before {
     padding-top: 3px;
     padding-bottom: 3px;
 }
+.button-under:hover{
+    cursor: pointer;
+    background-color: rgb(168, 0, 0);
+}
 .under-icon{
     font-size: 1.6rem;
     text-align: center;
     margin-right: 0.2rem;
+}
+.maps-holder {
+    position: absolute;
+    top: 30vh;
+    left: 10%;
+    right: 10%;
+    background-color: black;
+    z-index: 3;
+    height: 15rem;
+    width: 80%;
+    display: none;
+    margin: auto;
+
+}
+.maps-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-button {
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    background-color: darkred;
+    color: white;
+    border: solid white 1px;
+    position: relative;
+    top: 4rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+.google-button:hover{
+    background-color: lightgreen;
+}
+.apple-button:hover{
+    background-color: lightslategray;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    position: relative;
+    top: 2rem;
+}
+.cancel-map {
+    color: white;
+    position: absolute;
+    right: 0;
+    font-size: 2rem !important;
+    cursor: pointer;
+}
+
+
+
+
+.gallery-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
 }
