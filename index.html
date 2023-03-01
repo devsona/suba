@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -19,8 +23,20 @@
         <div><p class="header-text">Quality &middot; Subs &middot; Salads</p></div>
     </header>
     <div class="under-header">
-        <button class="button-under"><span class="material-symbols-outlined under-icon">near_me</span> Get Directions</button>
+        <button class="button-under" onclick="mapDisplay()"><span class="material-symbols-outlined under-icon">near_me</span> Get Directions</button>
         <button class="button-under"><span class="material-symbols-outlined under-icon">restaurant_menu</span>Menu</button>
     </div>
+    <div class="maps-holder" onclick="">
+        <span class="material-symbols-outlined cancel-map" onclick="exitDispaly()">cancel</span>
+        <h3>Please pick a map service🤗</h3>
+        <div class="maps-container">
+        <button class="map-button google-button"><span class="material-symbols-outlined">location_on</span>GOOGLE MAPS</button>
+        <button class="map-button apple-button"><span class="material-symbols-outlined">nutrition</span>APPLE MAPS</button>
+        </div>
+    </div>
+    <div>
+        <h2 class='gallery-heading'><span class="material-symbols-outlined">image</span>Gallery</h2>
+    </div>
+    <script src="index.js" defer></script>
 </body>
 </html>
