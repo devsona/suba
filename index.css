@@ -9,6 +9,7 @@
 }
 body {
     font-family: 'PT Sans', sans-serif;
+    background: mistyrose;
 }
 body,html {
     scroll-behavior: smooth;
@@ -27,8 +28,8 @@ header:before {
     z-index: 1;
     display: block;
     position: absolute;
-    top: 6.55rem; 
-    height: 53.5vh;
+    /* top: 6.55rem;  */
+    height: 65vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
@@ -47,8 +48,9 @@ header:before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:   white;
+    background-color:  mistyrose;
     z-index: 2;
+    position: relative;
 }
 .logo-nav {
 
@@ -61,7 +63,6 @@ header:before {
 
 .under-header{
     height: 6rem;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,11 +148,47 @@ h3{
     font-size: 2rem !important;
     cursor: pointer;
 }
+.map-button > a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    align-self: center;
+    display: inline;
+}
 
 
 
 
-.gallery-heading {
+.hours-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+#day {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#open {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.hours-list{
+    margin: auto;
+    padding: 0;
+}
+.hl{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+
+.menu-heading{
     display: flex;
     align-items: center;
     justify-content: center;
