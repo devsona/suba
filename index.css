@@ -230,3 +230,42 @@ h3{
     justify-self: center;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.review-container{
+    width: 95%;
+    border-radius: 1rem;
+    background-color: peachpuff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.review-icon {
+    color: rgb(170, 0, 0);
+    font-size: 3rem !important;
+}
+.yelp {
+    width: 2.5rem;
+    justify-self: flex-end;
+    position: relative;
+}
+.google {
+    width: 2.5rem;
+    justify-self: flex-end;
+    position: relative;
+}
+.facebook {
+    width: 2.5rem;
+    justify-self: flex-end;
+    position: relative;
+}
+#footer-h3 {
+    color: rgb(36, 35, 35);
+    display: block;
+    margin: auto;
+
+}

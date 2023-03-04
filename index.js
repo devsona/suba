@@ -24,25 +24,36 @@ function openOrClose() {
     }
 }
 console.log(openOrClose());
+
+
 let boldFirst = document.getElementById('first');
 let boldSecond = document.getElementById('second');
 let boldThird = document.getElementById('third');
 let boldFourth = document.getElementById('fourth');
 let boldFifth = document.getElementById('fifth');
+let boldSixth = document.getElementById('sixth');
+let boldSeven = document.getElementById('sunday');
 
+
+const m = new Date();
+let dayCheck = m.toDateString().substring(0,3);
+console.log(dayCheck)
 function ifDayTurnBolded(){
-    if (day === 1){
+    if (dayCheck === 'Mon'){
         boldFirst.style.fontWeight = 'bold';
-    } else if (day === 2){
-        boldSecond.style.fontWeight = 'bold'
-    } else if (day === 3) {
-        boldThird.style.fontWeight = 'bold'
-    } else if (day === 4){
-        boldFourth.style.fontWeight = 'bold'
-    } else if (day === 5){
-        boldFifth.style.fontWeight = 'bold'
+    } else if (dayCheck === 'Tue'){
+        boldSecond.style.fontWeight = 'bold';
+    } else if (dayCheck === 'Wed') {
+        boldThird.style.fontWeight = 'bold';
+    } else if (dayCheck === 'Thu'){
+        boldFourth.style.fontWeight = 'bold';
+    } else if (dayCheck === 'Fri'){
+        boldFifth.style.fontWeight = 'bold';
+    } else if (dayCheck === 'Sat') {
+        boldSixth.style.fontWeight = 'bold';
     } else {
-        return 'please wait til function is done'
+        boldSeven.style.fontWeight = 'bold';
     }
 }
 ifDayTurnBolded();
+
