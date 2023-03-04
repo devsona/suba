@@ -25,7 +25,7 @@
     </header>
     <div class="under-header">
         <button class="button-under" onclick="mapDisplay()"><span class="material-symbols-outlined under-icon">near_me</span> Get Directions</button>
-        <button class="button-under"><span class="material-symbols-outlined under-icon">restaurant_menu</span>Menu</button>
+        <button class="button-under" onclick="goToMenuHtml()"><span class="material-symbols-outlined under-icon">restaurant_menu</span>Menu</button>
     </div>
     <div class="maps-holder" onclick="">
         <span class="material-symbols-outlined cancel-map" onclick="exitDispaly()">cancel</span>
@@ -56,12 +56,13 @@
         <p class="contact-p">Want to order or have a question? Call us using the button bellow</p>
         <a href="tel:9725799420" class="a-contact"><button class="contact-button">Call<span class="material-symbols-outlined">call</span></button></a>
     </div>
+    <hr>
     <h3 id="footer-h3">Enjoyed the food? Leave a review and stay connected!😎</h3>
     <footer>
         <div class="review-container">
-            <img  class='yelp' src="yelp.png" alt="yelp logo">
-            <img class='google' src="search.png" alt="google logo">
-            <img class='facebook' src="facebook (1).png" alt="facebook logo">
+            <a href="https://www.yelp.com/biz/sub-a-irving"><img  class='yelp' src="yelp.png" alt="yelp logo"></a>
+            <a href='https://www.google.com/search?q=sub+a+reviews&sxsrf=AJOqlzXBBSYr6sHzhJkR--smFSzzl9F0mQ%3A1677955133115&ei=PZADZLLWBsa4qtsPtvOi-Ao&ved=2ahUKEwjujJGm9sL9AhVWk2oFHftoDokQyNoBKAJ6BAgLEAk&uact=5&oq=sub+a&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECAAQQzIECAAQQzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgjEOoCECc6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoOCC4QgAQQsQMQxwEQ0QM6BQguEIAEOgoIABCxAxCDARBDOhAILhCxAxCDARDHARDRAxBDOgsILhCABBCxAxCDAToECC4QQzoHCAAQsQMQQzoOCAAQgAQQsQMQgwEQyQM6BQgAEJECOhAILhCxAxDHARDRAxDUAhBDOggILhCABBCxAzoHCAAQyQMQQ0oECEEYAFCdBVjSCGCHCmgBcAF4AIABdYgBwAOSAQMzLjKYAQCgAQGwAQrAAQE&sclient=gws-wiz-serp&si=AEcPFx6purRFeOqFYNq_0Q9xh5j-j4Pwn4_zvXjmKm0luiMe5zhgu9FjQdf9tEfg_gW1ZlgxazxLxbMkP4TgkTtMYpty4oZxBK69Du-7SUUMVddOCOYk-GyustVm2nHwU5Lwi05d5CgF&ictx=1#lrd=0x864e834d8f41afc7:0x7517c1a5c2e9f94d,3,,,,'><img class='google' src="search.png" alt="google logo"></a>
+            <a href='https://www.facebook.com/subarestaurant/'><img class='facebook' src="facebook (1).png" alt="facebook logo"></a>
         </div>
     </footer>
     <script src="index.js" defer></script>
