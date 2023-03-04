@@ -187,7 +187,9 @@ h3{
     font-size: 1.2rem;
 }
 
-
+.contact-container {
+    margin-bottom: 3rem;
+}
 .contact-heading{
     display: flex;
     align-items: center;
@@ -197,8 +199,8 @@ h3{
 }
 .contact-p{
     text-align: center;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     font-size: 1.1rem;
 }
 .contact-button{
@@ -243,23 +245,24 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 0.5rem;
 }
 .review-icon {
     color: rgb(170, 0, 0);
     font-size: 3rem !important;
 }
 .yelp {
-    width: 2.5rem;
+    width: 2.6rem;
     justify-self: flex-end;
     position: relative;
 }
 .google {
-    width: 2.5rem;
+    width: 2.6rem;
     justify-self: flex-end;
     position: relative;
 }
 .facebook {
-    width: 2.5rem;
+    width: 2.6rem;
     justify-self: flex-end;
     position: relative;
 }
@@ -267,5 +270,8 @@ footer {
     color: rgb(36, 35, 35);
     display: block;
     margin: auto;
-
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }

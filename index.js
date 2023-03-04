@@ -57,3 +57,6 @@ function ifDayTurnBolded(){
 }
 ifDayTurnBolded();
 
+function goToMenuHtml(){
+    if(confirm("Leaving page to view menu")) document.location = 'menu.html';
+}
