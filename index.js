@@ -8,21 +8,32 @@ function exitDispaly(){
 
 let dateObj = new Date();
 let month = dateObj.getUTCMonth() + 1;
-let day = dateObj.getDay() - 2;
+let day = dateObj.toDateString().substring(0,3);
 let year = dateObj.getUTCFullYear();
-newdate = month + "/" + day + "/" + year;
+newdate = day + "/" + year;
 
 let elDay = document.getElementById('day');
 elDay.innerHTML = 'Today is: ' + newdate;
 function openOrClose() {
-    if (day == 7){
+    if (day === 'Sunday'){
     let close = document.getElementById('open').innerHTML = "sorry we are closed :C, come back tommow!"
     return 'close'
-    } else{
+    } else if (day === 'Tue'){
+    return newdate += 'sday';
+    }else{
     let close = document.getElementById('open').innerHTML = "we're open Today! please check hours for more information" 
     return 'open'
     }
 }
+function finishDay(){
+    if(day === 'Mon' || day === 'Sun'){
+    return day += 'day';
+    }else {
+    return   day += 'sday'
+    }
+}
+finishDay();
+console.log(finishDay());
 console.log(openOrClose());
 
 
@@ -37,7 +48,7 @@ let boldSeven = document.getElementById('sunday');
 
 const m = new Date();
 let dayCheck = m.toDateString().substring(0,3);
-console.log(dayCheck)
+console.log(dayCheck);
 function ifDayTurnBolded(){
     if (dayCheck === 'Mon'){
         boldFirst.style.fontWeight = 'bold';

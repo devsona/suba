@@ -59,6 +59,93 @@ h3 {
     margin-left: 0.5rem;
     text-transform: uppercase;
 }
+
+
+.flex-container-menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.flex-container-menu {
+    width: 20rem;
+    height: 15rem;
+    background-color: purple;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subs-container {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipOTvzTW3kteQg1VIoTvjwFN7BKC81nVMOqdByM=s680-w680-h510);
+}
+.wings-container {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipM5mRIG--K7BYjUmeBlYTq1q9EpNTNml-UJjA4=s680-w680-h510);
+    background-position: top;
+}
+.rice-container {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMR8ttaY08IgyZJbM9rv7njefZ7q8r2n1jMrRdy=s680-w680-h510);
+    background-position: center;
+}
+.salad-container {
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipO984ljERUlWBBtRExdOnBys5BZ6HT2_lvfZdfd=s680-w680-h510);
+    background-position: center;
+}
+.sides-container {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdAyVEsmvu7XdIQ5vsVtLw3_1vl8CNG_TCBZKm1uKhk3rBn7TsSIMdrZX12fWgJE4CuDw&usqp=CAU);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-container-menu:before {
+    content: " ";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    height: 15rem;
+    width: inherit;
+    background: rgba(0, 0, 0, 0.5);
+}
+.h2 {
+    color: white;
+    position: relative;
+    z-index: 3;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     display: flex;
     justify-content: center;
