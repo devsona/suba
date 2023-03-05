@@ -1,0 +1,104 @@
+/* pt sans */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+/* great vibes font */
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    /* background: #f5f5f5; */
+    background-color: rgb(26, 26, 26);
+}
+body,html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #f5f5f5;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.menu-item-container {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.5rem;
+    border-radius: 1rem;
+}
+h3 {
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.review-container{
+    width: 95%;
+    border-radius: 1rem;
+    background-color: peachpuff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+.yelp {
+    width: 2.6rem;
+    justify-self: flex-end;
+    position: relative;
+}
+.google {
+    width: 2.6rem;
+    justify-self: flex-end;
+    position: relative;
+}
+.facebook {
+    width: 2.6rem;
+    justify-self: flex-end;
+    position: relative;
+}
+#footer-h2 {
+    text-align: center;
+    color: lightgrey;
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    position: relative;
+    top: 1.5rem;
+}
