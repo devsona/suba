@@ -5,13 +5,81 @@ function closeMenu(){
 function openMenu(){
     subCloser.style.display = 'block'
 }
-let proSubAdd = document.getElementById('prosub-ingredients')
-let proSubIcon = document.getElementById('prosub-add-icon')
-let prosubAddContainer = document.getElementById('prosub-add-container')
-let proSubSubtractContainer = document.getElementById('prosub-subtract-container')
+// prosub ingredients
 function openProSubIngredients(){
+    let proSubAdd = document.getElementById('prosub-ingredients')
+    let prosubAddContainer = document.getElementById('prosub-add-container')
+    let proSubSubtractContainer = document.getElementById('prosub-subtract-container')
+
     proSubAdd.style.display = 'block'
-    proSubIcon.style.display = 'none'
     prosubAddContainer.style.display = 'none'
     proSubSubtractContainer.style.display = 'flex'
+}
+function closeProSubIngredients(){
+    let proSubAdd = document.getElementById('prosub-ingredients')
+    let prosubAddContainer = document.getElementById('prosub-add-container')
+    let proSubSubtractContainer = document.getElementById('prosub-subtract-container')
+
+    proSubAdd.style.display = 'none'
+    prosubAddContainer.style.display = 'flex'
+    proSubSubtractContainer.style.display = 'none'
+}
+// master sub ingredients
+function openMasterSubIngredients(){
+    let masterSubAddContainer = document.getElementById('master-sub-container-add')
+    let masterSubSubtractContainer = document.getElementById('mastersub-subtract')
+    let masterSubIngredients = document.getElementById('master-sub-ingredients')
+
+    masterSubAddContainer.style.display = 'none'
+    masterSubSubtractContainer.style.display = 'flex'
+    masterSubIngredients.style.display = 'block'
+}
+function closeMasterSubIngreedients(){  
+    const masterSubAddContainer = document.getElementById('master-sub-container-add')
+    let masterSubSubtractContainer = document.getElementById('mastersub-subtract')
+    let masterSubIngredients = document.getElementById('master-sub-ingredients')
+
+    masterSubAddContainer.style.display = 'flex'
+    masterSubSubtractContainer.style.display = 'none'
+    masterSubIngredients.style.display = 'none'
+
+}
+// grinder ingreadints
+function openGrinderIngredients(){
+    let grinderAdd = document.getElementById('grinder-add-container');
+    let grinderSubtract = document.getElementById('grinder-subtract-container')
+    let grinderIngredients = document.getElementById('grinder-ingredients')
+
+    grinderAdd.style.display = 'none'
+    grinderSubtract.style.display = 'flex'
+    grinderIngredients.style.display = 'block'
+}
+function closeGrinderIngredients(){
+    let grinderAdd = document.getElementById('grinder-add-container');
+    let grinderSubtract = document.getElementById('grinder-subtract-container')
+    let grinderIngredients = document.getElementById('grinder-ingredients')
+
+    grinderAdd.style.display = 'flex'
+    grinderSubtract.style.display = 'none'
+    grinderIngredients.style.display = 'none'
+}
+// Super sub ingredients
+function openSuperSubIngredients(){
+    let superSubAdd = document.getElementById('suppersub-add-container')
+    let superSubSubtract = document.getElementById('supersub-subtract-container')
+    let superSubIngredients = document.getElementById('supersub-ingredients')
+
+    superSubAdd.style.display = 'none'
+    superSubSubtract.style.display = 'flex'
+    superSubIngredients.style.display = 'block'
+}
+function closeSuperSubIngredients(){
+    let superSubAdd = document.getElementById('suppersub-add-container')
+    let superSubSubtract = document.getElementById('supersub-subtract-container')
+    let superSubIngredients = document.getElementById('supersub-ingredients')
+
+    superSubAdd.style.display = 'flex'
+    superSubSubtract.style.display = 'none'
+    superSubIngredients.style.display = 'none'
+
 }

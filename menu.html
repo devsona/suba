@@ -20,29 +20,48 @@
             <a href="#" onclick="openMenu()"><h2 class="h2 part">Subs</h2></a>
         </div>
 
-        <section id="sub-section">
-            <div class="sub-div-con">
+            <div class="sub-div-con" id="sub-section">
                 <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close">close</span></div>
                 <p class="scroll-toview">(Scroll to view more)</p>
-                <p class="price-prosub"><strong>PRO SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
-                <div class="ingredients-container" id="prosub-add-container">
-                <p class="ingredients-add" id="prosub-add" onclick="openProSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                <!--PROSUB CONTAINER-->
+                <p      class="price-prosub"><strong>PRO SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
+                <div    class="ingredients-container" id="prosub-add-container">
+                <p      class="ingredients-add"       id="prosub-add"       onclick="openProSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
                 </div>
-                <div class="ingredients-container" id="prosub-subtract-container">
-                    <p class="ingredients-add" id="prosub-subtract" onclick="openProSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                <div    class="ingredients-container" id="prosub-subtract-container">
+                    <p  class="ingredients-add"       id="prosub-subtract"  onclick="closeProSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
                 </div>
-                <p class="ingredients-list" id="prosub-ingredients"> (Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
-            </div>
-            <p><strong>MASTER SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: 24.35</p>
-                <div>
-                <p>Ingredients<span class="material-symbols-outlined">add</span></p>
+                <p      class="ingredients-list"      id="prosub-ingredients"> (Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
+                <!--MASTER SUB CONTAINER-->
+                <div id="master-sub-container-parent">
+                    <p          class="price-mastersub"><strong>MASTER SUB:</strong><br>8 Inch Price: $7.85<br>16 Inch Price: $15.60<br>24 Inch Price: 23.45</p>
+                        <div    class="ingredients-container" id="master-sub-container-add">
+                        <p      class="ingredients-add" id="mastersub-add" onclick="openMasterSubIngredients()">Ingredients<span class="material-symbols-outlined">add</span></p>
+                        </div>
+                        <div    class="ingredients-container" id="master-sub-container-subtract">
+                            <p  class="ingredients-add" id="mastersub-subtract" onclick="closeMasterSubIngreedients()">Ingredients<span class="material-symbols-outlined">remove</span></p>
+                        </div>
+                        <p class="ingredients-list" id="master-sub-ingredients">(Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
+                    </div>
+                <!--GRINDER-->
+                <p      class="price-grinder"><strong>GRINDER:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="grinder-add-container">
+                <p      class="ingredients-add"       id="grinder-add" onclick="openGrinderIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
                 </div>
-                <div>
-                    <p>Ingredients<span class="material-symbols-outlined">remove</span></p>
+                <div    class="ingredients-container" id="grinder-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeGrinderIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
                 </div>
-                <p>(Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
-            </div>
-        </section>
+                <p      class="ingredients-list"      id="grinder-ingredients">(Ham, Pepperoni, Genoa Salami, Bologna, Provolone & Swiss Cheese)</p>
+                <!--SUPER SUB-->
+                <p      class="price-grinder"><strong>SUPER SUB:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="suppersub-add-container">
+                <p      class="ingredients-add"       id="grinder-add" onclick="openSuperSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="supersub-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeSuperSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="supersub-ingredients">(Ham, Turkey, Roast Beef, American, Provolone & Swiss Cheese)</p>
+                </div>
 
         <div class="flex-container-menu wings-container">
             <a href="#"><h2 class="h2 part">Wings</h2></a>
@@ -68,7 +87,7 @@
             <a href='https://www.facebook.com/subarestaurant/'><img class='facebook' src="facebook (1).png" alt="facebook logo"></a>
         </div>
     </footer>
-<script src="menu.js" defer></script>
+<script src="menu.js" async></script>
 
 </body>
 </html>

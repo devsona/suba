@@ -179,11 +179,18 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.price-prosub {
-    font-size: 1.1rem;
+
+
+#master-sub-container-parent {
+    z-index: 1;
 }
-
-
+.price-prosub, .price-mastersub, .price-grinder {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+#mastersub-subtract {
+    display: none;
+}
 
 
 
