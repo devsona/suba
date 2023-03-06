@@ -7,6 +7,8 @@
     <title>Sub A menu</title>
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav class="nav">
@@ -15,63 +17,49 @@
     <h1>Menu Items</h1>
     <section class="flex-container-menu-items">
         <div class="flex-container-menu subs-container">
-            <a href="#"><h2 class="h2">Subs</h2></a>
+            <a href="#" onclick="openMenu()"><h2 class="h2 part">Subs</h2></a>
         </div>
 
+        <section id="sub-section">
+            <div class="sub-div-con">
+                <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close">close</span></div>
+                <p class="scroll-toview">(Scroll to view more)</p>
+                <p class="price-prosub"><strong>PRO SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
+                <div class="ingredients-container" id="prosub-add-container">
+                <p class="ingredients-add" id="prosub-add" onclick="openProSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                </div>
+                <div class="ingredients-container" id="prosub-subtract-container">
+                    <p class="ingredients-add" id="prosub-subtract" onclick="openProSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                </div>
+                <p class="ingredients-list" id="prosub-ingredients"> (Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
+            </div>
+            <p><strong>MASTER SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: 24.35</p>
+                <div>
+                <p>Ingredients<span class="material-symbols-outlined">add</span></p>
+                </div>
+                <div>
+                    <p>Ingredients<span class="material-symbols-outlined">remove</span></p>
+                </div>
+                <p>(Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
+            </div>
+        </section>
+
         <div class="flex-container-menu wings-container">
-            <a href="#"><h2 class="h2">Wings</h2></a>
+            <a href="#"><h2 class="h2 part">Wings</h2></a>
         </div>
 
         <div class="flex-container-menu rice-container">
-            <a href="#"><h2 class="h2">Rice</h2></a>
+            <a href="#"><h2 class="h2 part">Rice</h2></a>
         </div>
 
         <div class="flex-container-menu salad-container">
-            <a href="#"><h2 class="h2">Salads</h2></a>
+            <a href="#"><h2 class="h2 part">Salads</h2></a>
         </div>
 
         <div class="flex-container-menu sides-container">
            <a href="#"><h2 class="h2">Sides & Drinks</h2></a>
         </div>
     </section>
-    <!-- <section class="menu-container">
-    <div class="menu-item-container"><h3>Cold cut Subs</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Hot Subs</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Fried rice</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Lo mein</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Springrolls</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Frito pie</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Wings</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Salads</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Sides & desserts</h3><span class="material-symbols-outlined">add</span></div>
-    </section>
-    <section class="menu-container">
-    <div class="menu-item-container"><h3>Drinks</h3><span class="material-symbols-outlined">add</span></div>
-    </section> -->
     <h2 id="footer-h2">Enjoyed the food? Leave a review and stay connected!😎</h3>
     <footer>
         <div class="review-container">
@@ -80,6 +68,7 @@
             <a href='https://www.facebook.com/subarestaurant/'><img class='facebook' src="facebook (1).png" alt="facebook logo"></a>
         </div>
     </footer>
-</header>
+<script src="menu.js" defer></script>
+
 </body>
 </html>

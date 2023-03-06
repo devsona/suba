@@ -113,8 +113,75 @@ h3 {
     position: relative;
     z-index: 3;
     display: inline;
+    padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 2rem;
+    text-align: center;
 }
-
+.part {
+    padding: 6.2rem;
+}
+.sub-div-con {
+    height: 75vh;
+    width: 80%;
+    background-color: white;
+    z-index: 5;
+    position: absolute;
+    top: 15%;
+    left: 11.5%;
+}
+.sub-heading {
+    text-align: center;
+}
+.sub-heading-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.close {
+    font-size: 2rem !important;
+    position: relative;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.scroll-toview {
+    text-align: center;
+    font-size: 0.8rem;
+    text-transform: lowercase;
+}
+.ingredients-add {
+    text-align: center;
+    background-color: rgb(158, 158, 158);
+    width: 80%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+.ingredients-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ingredients-list{
+    font-size: 1.2rem;
+    display: none;
+}
+#prosub-sub-icon {
+    display: block;
+}
+#prosub-subtract-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.price-prosub {
+    font-size: 1.1rem;
+}
 
 
 
