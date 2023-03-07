@@ -130,6 +130,7 @@ h3 {
     position: absolute;
     top: 15%;
     left: 11.5%;
+    overflow-y: scroll;
 }
 .sub-heading {
     text-align: center;
@@ -144,11 +145,10 @@ h3 {
     font-size: 2rem !important;
     position: relative;
     cursor: pointer;
-    overflow-y: scroll;
 }
 .scroll-toview {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     text-transform: lowercase;
 }
 .ingredients-add {
@@ -170,6 +170,9 @@ h3 {
 .ingredients-list{
     font-size: 1.2rem;
     display: none;
+    color: #107896;
+    font-weight: bolder;
+
 }
 #prosub-sub-icon {
     display: block;
@@ -185,8 +188,9 @@ h3 {
     z-index: 1;
 }
 .price-prosub, .price-mastersub, .price-grinder {
-    font-size: 1.1rem;
-    margin-top: 1rem;
+    font-size: 1.25rem;
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
 }
 #mastersub-subtract {
     display: none;

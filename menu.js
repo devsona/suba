@@ -65,21 +65,32 @@ function closeGrinderIngredients(){
 }
 // Super sub ingredients
 function openSuperSubIngredients(){
-    let superSubAdd = document.getElementById('suppersub-add-container')
-    let superSubSubtract = document.getElementById('supersub-subtract-container')
-    let superSubIngredients = document.getElementById('supersub-ingredients')
+    let superSubAdd = document.getElementById('suppersub-add-container');
+    let superSubSubtract = document.getElementById('supersub-subtract-container');
+    let superSubIngredients = document.getElementById('supersub-ingredients');
 
-    superSubAdd.style.display = 'none'
-    superSubSubtract.style.display = 'flex'
-    superSubIngredients.style.display = 'block'
+    superSubAdd.style.display = 'none';
+    superSubSubtract.style.display = 'flex';
+    superSubIngredients.style.display = 'block';
 }
 function closeSuperSubIngredients(){
-    let superSubAdd = document.getElementById('suppersub-add-container')
-    let superSubSubtract = document.getElementById('supersub-subtract-container')
-    let superSubIngredients = document.getElementById('supersub-ingredients')
+    let superSubAdd = document.getElementById('suppersub-add-container');
+    let superSubSubtract = document.getElementById('supersub-subtract-container');
+    let superSubIngredients = document.getElementById('supersub-ingredients');
 
-    superSubAdd.style.display = 'flex'
-    superSubSubtract.style.display = 'none'
-    superSubIngredients.style.display = 'none'
+    superSubAdd.style.display = 'flex';
+    superSubSubtract.style.display = 'none';
+    superSubIngredients.style.display = 'none';
 
+}
+// star sub ingredients
+function openStarSubIngredients() {
+    const addContainer = document.getElementById('starsub-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('starsub-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('starsub-subtract-container').style.display = 'flex'
+}
+function closeStarSubIngredients() {
+    const addContainer = document.getElementById('starsub-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('starsub-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('starsub-subtract-container').style.display = 'none'
 }
