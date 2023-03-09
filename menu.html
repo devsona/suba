@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav class="nav">
@@ -21,55 +23,100 @@
         </div>
 
             <div class="sub-div-con" id="sub-section">
-                <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close">close</span></div>
+                <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close notranslate">close</span></div>
                 <p class="scroll-toview">(Scroll to view more)</p>
                 <!--PROSUB CONTAINER-->
                 <p      class="price-prosub"><strong>#1 PRO SUB:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
                 <div    class="ingredients-container" id="prosub-add-container">
-                <p      class="ingredients-add"       id="prosub-add"       onclick="openProSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                <p      class="ingredients-add"       id="prosub-add"       onclick="openProSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
                 </div>
                 <div    class="ingredients-container" id="prosub-subtract-container">
-                    <p  class="ingredients-add"       id="prosub-subtract"  onclick="closeProSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                    <p  class="ingredients-add"       id="prosub-subtract"  onclick="closeProSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
                 </div>
                 <p      class="ingredients-list"      id="prosub-ingredients"> (Turkey, Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
                 <!--MASTER SUB CONTAINER-->
                 <div id="master-sub-container-parent">
-                    <p          class="price-mastersub"><strong>#2 MASTER SUB:</strong><br>8 Inch Price: $7.85<br>16 Inch Price: $15.60<br>24 Inch Price: 23.45</p>
+                    <p          class="price-mastersub"><strong>#2 MASTER SUB:</strong><br>8 Inch Price: $7.85<br>16 Inch Price: $15.60<br>24 Inch Price: $23.45</p>
                         <div    class="ingredients-container" id="master-sub-container-add">
-                        <p      class="ingredients-add" id="mastersub-add" onclick="openMasterSubIngredients()">Ingredients<span class="material-symbols-outlined">add</span></p>
+                        <p      class="ingredients-add" id="mastersub-add" onclick="openMasterSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">add</span></p>
                         </div>
                         <div    class="ingredients-container" id="master-sub-container-subtract">
-                            <p  class="ingredients-add" id="mastersub-subtract" onclick="closeMasterSubIngreedients()">Ingredients<span class="material-symbols-outlined">remove</span></p>
+                            <p  class="ingredients-add" id="mastersub-subtract" onclick="closeMasterSubIngreedients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
                         </div>
                         <p class="ingredients-list" id="master-sub-ingredients">(Roast Beef, Ham, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
                     </div>
                 <!--GRINDER-->
                 <p      class="price-grinder"><strong>#3 GRINDER:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
                 <div    class="ingredients-container" id="grinder-add-container">
-                <p      class="ingredients-add"       id="grinder-add" onclick="openGrinderIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                <p      class="ingredients-add"       id="grinder-add" onclick="openGrinderIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
                 </div>
                 <div    class="ingredients-container" id="grinder-subtract-container" style="display: none;">
-                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeGrinderIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeGrinderIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
                 </div>
                 <p      class="ingredients-list"      id="grinder-ingredients">(Ham, Pepperoni, Genoa Salami, Bologna, Provolone & Swiss Cheese)</p>
                 <!--SUPER SUB-->
                 <p      class="price-grinder"><strong>#4 SUPER SUB:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
                 <div    class="ingredients-container" id="suppersub-add-container">
-                <p      class="ingredients-add"       id="grinder-add" onclick="openSuperSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                <p      class="ingredients-add"       id="grinder-add" onclick="openSuperSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
                 </div>
                 <div    class="ingredients-container" id="supersub-subtract-container" style="display: none;">
-                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeSuperSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined">remove</span></p>
+                    <p  class="ingredients-add"       id="grinder-subtract"  onclick="closeSuperSubIngredients()">Ingredients<span id="prosub-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
                 </div>
                 <p      class="ingredients-list"      id="supersub-ingredients">(Ham, Turkey, Roast Beef, American, Provolone & Swiss Cheese)</p>
                 <!--Star Club-->
                 <p      class="price-grinder"><strong>#5 STAR CLUB:</strong><br>8 Inch Price: $7.85<br>16 Inch Price: $15.60<br>24 Inch Price: $23.45</p>
                 <div    class="ingredients-container" id="starsub-add-container">
-                <p      class="ingredients-add"       id="star-add" onclick="openStarSubIngredients()">Ingredients<span class="material-symbols-outlined" id="prosub-add-icon">add</span></p>
+                <p      class="ingredients-add"       id="star-add" onclick="openStarSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
                 </div>
                 <div    class="ingredients-container" id="starsub-subtract-container" style="display: none;">
-                    <p  class="ingredients-add"       id="starsub-subtract"  onclick="closeStarSubIngredients()">Ingredients<span class="material-symbols-outlined">remove</span></p>
+                    <p  class="ingredients-add"       id="starsub-subtract"  onclick="closeStarSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
                 </div>
                 <p      class="ingredients-list"      id="starsub-ingredients">(Ham, Turkey, Pepperoni, Genoa Salami, Bologna, American, Provolone & Swiss Cheese)</p>
+                <!--PASTRAMI & CHEESE --->
+                <p      class="price-grinder"><strong>#6 PASTRAMI & CHEESE:</strong><br>8 Inch Price: $8.08<br>16 Inch Price: $16.06<br>24 Inch Price: $24.14</p>
+                <!--TURKEY & CHEESE-->
+                <p      class="price-grinder"><strong>#7 TURKEY & CHEESE:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <!--ROAST BEEF & CHEESE-->
+                <p      class="price-grinder"><strong>#8 ROAST BEEF & CHEESE:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
+                <!--HAM & CHEESE-->
+                <p      class="price-grinder"><strong>#9 HAM & CHEESE:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <!--HOAGIE-->
+                <p      class="price-grinder"><strong>#10 HOAGIE:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="hoagie-add-container">
+                <p      class="ingredients-add"       id="hoagie-add" onclick="openHoagieSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="hoagie-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="hoagie-subtract"  onclick="closeHoagieSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="hoagie-ingredients">(Ham, Genoa Salami, Pepperoni & Provolone Cheese)</p>
+                <!--COMBINATION-->
+                <p      class="price-grinder"><strong>#11 COMBINATION:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="combination-add-container">
+                <p      class="ingredients-add"       id="combination-add" onclick="openCombinationSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="combination-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="combination-subtract"  onclick="closeCombinationSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="combination-ingredients">(Ham, Salami, Bologna & American Cheese)</p>
+                <!--TUNA & CHEESE-->
+                <p      class="price-grinder"><strong>#12 TUNA & CHEESE:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="tuna-add-container">
+                <p      class="ingredients-add"       id="tuna-add" onclick="openTunaSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="tuna-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="tuna-subtract"  onclick="closeTunaSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="tuna-ingredients">(Tuna Mixed with Mayo & Diced Celery)</p>
+                <!--VEGETARIAN-->
+                <p      class="price-grinder"><strong>#13 VEGETARIAN:</strong><br>8 Inch Price: $7.00<br>16 Inch Price: $13.90<br>24 Inch Price: $22.80</p>
+                <div    class="ingredients-container" id="veggie-add-container">
+                <p      class="ingredients-add"       id="veggie-add" onclick="openVeggieSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="veggie-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="veggie-subtract"  onclick="closeVeggieSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="veggie-ingredients">(Your Choice of Toppings, Dressings, Cheese)</p>
+
                 </div>
 
         <div class="flex-container-menu wings-container">

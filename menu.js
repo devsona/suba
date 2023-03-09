@@ -94,3 +94,47 @@ function closeStarSubIngredients() {
     const ingredientsContainer = document.getElementById('starsub-ingredients').style.display = 'none';
     const subtractContainer = document.getElementById('starsub-subtract-container').style.display = 'none'
 }
+// HOAGIE
+function openHoagieSubIngredients() {
+    const addContainer = document.getElementById('hoagie-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('hoagie-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('hoagie-subtract-container').style.display = 'flex'
+}
+function closeHoagieSubIngredients() {
+    const addContainer = document.getElementById('hoagie-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('hoagie-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('hoagie-subtract-container').style.display = 'none'
+}
+// combination
+function openCombinationSubIngredients() {
+    const addContainer = document.getElementById('combination-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('combination-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('combination-subtract-container').style.display = 'flex'
+}
+function closeCombinationSubIngredients() {
+    const addContainer = document.getElementById('combination-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('combination-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('combination-subtract-container').style.display = 'none'
+}
+// Tuna & Cheese
+function openTunaSubIngredients() {
+    const addContainer = document.getElementById('tuna-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('tuna-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('tuna-subtract-container').style.display = 'flex'
+}
+function closeTunaSubIngredients() {
+    const addContainer = document.getElementById('tuna-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('tuna-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('tuna-subtract-container').style.display = 'none'
+}
+// Veggie
+function openVeggieSubIngredients() {
+    const addContainer = document.getElementById('veggie-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('veggie-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('veggie-subtract-container').style.display = 'flex'
+}
+function closeVeggieSubIngredients() {
+    const addContainer = document.getElementById('veggie-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('veggie-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('veggie-subtract-container').style.display = 'none'
+}
