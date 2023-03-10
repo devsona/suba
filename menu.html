@@ -11,18 +11,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav class="nav">
         <img class='logo-nav' src="logo.png" alt="Logo">
+        <a class="home" href="index.html"><span class="material-symbols-outlined notranslate" id="home">home</span></a>
     </nav>
     <h1>Menu Items</h1>
     <section class="flex-container-menu-items">
+        <div class="open-menu-list-subs-contain" id="menu-list-subs"></div>
         <div class="flex-container-menu subs-container">
             <a href="#" onclick="openMenu()"><h2 class="h2 part">Subs</h2></a>
         </div>
-
             <div class="sub-div-con" id="sub-section">
+                <div style="display: block;" class="sub-side-contain"><div class="side-list-container-subs"><span class="material-symbols-outlined" onclick="openExtraDetails()">sort</span></div></div>
                 <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close notranslate">close</span></div>
                 <p class="scroll-toview">(Scroll to view more)</p>
                 <!--PROSUB CONTAINER-->
@@ -116,7 +121,93 @@
                     <p  class="ingredients-add"       id="veggie-subtract"  onclick="closeVeggieSubIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
                 </div>
                 <p      class="ingredients-list"      id="veggie-ingredients">(Your Choice of Toppings, Dressings, Cheese)</p>
-
+                <!--HOT SUBS -->
+                <div><h3 class="hot-sub-h3" id="hot-subs">Hot Subs</h3></div>
+                <!--SUBBURGER COMBO-->
+                <p      class="price-grinder"><strong>#14 SUBBURGER COMBO:</strong><br>8 Inch Price: $11.09<br>16 Inch Price: $22.08<br>24 Inch Price: $33.07</p>
+                <div    class="ingredients-container" id="subburger-add-container">
+                <p      class="ingredients-add"       id="subburger-add" onclick="openSubBurgerIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="subburger-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="subburger-subtract"  onclick="closeSubBurgerIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="subburger-ingredients">(2 Beef Patties, Lettuce, Tomato, Onion, Pickles, Mayo, Mustard, American Cheese+Fries+Med Drink)</p>
+                <!--CHEESE STEAK-->
+                <p      class="price-grinder"><strong>#15 CHEESE STEAK:</strong><br>8 Inch Price: $8.78<br>16 Inch Price: $17.46<br>24 Inch Price: $26.14</p>
+                <div    class="ingredients-container" id="cheeseSteak-add-container">
+                <p      class="ingredients-add"       id="cheeseSteak-add" onclick="openCheeseSteakIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="cheeseSteak-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="cheeseSteak-subtract"  onclick="closeCheeseSteakIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="cheeseSteak-ingredients">(Beef, Bell Pepper, Mushroom, Onion, Mayo, Mozzarella Cheese) </p>
+                <!--FAJITA SUB-->
+                <p      class="price-grinder"><strong>#16 FAJITA SUB:</strong><br>8 Inch Price: $8.78<br>16 Inch Price: $17.46<br>24 Inch Price: $26.14</p>
+                <div    class="ingredients-container" id="fajita-add-container">
+                <p      class="ingredients-add"       id="fajita-add" onclick="openFajitaIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="fajita-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="fajita-subtract"  onclick="closeFajitaIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="fajita-ingredients">(Beef Fajita, Lettuce, Tomato, Onion, Jalapeno, Guacamole, Mayo, Mozzarella Cheese)</p>
+                <!--TURKEY & BACON--->
+                <p      class="price-grinder"><strong>#17 TURKEY & BACON:</strong><br>8 Inch Price: $8.15<br>16 Inch Price: $16.20<br>24 Inch Price: $24.35</p>
+                <div    class="ingredients-container" id="turkey-add-container">
+                <p      class="ingredients-add"       id="turkey-add" onclick="openTurkeyIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="turkey-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="turkey-subtract"  onclick="closeTurkeyIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="turkey-ingredients">(Turkey, Bacon, Your Choice of Toppings, Dressings, Cheese)</p>
+                <!--GRILLED CHICKEN-->
+                <p      class="price-grinder"><strong>#18 GRILLED CHICKEN:</strong><br>8 Inch Price: $8.08<br>16 Inch Price: $16.06<br>24 Inch Price: $24.14</p>
+                <div    class="ingredients-container" id="grilled-add-container">
+                <p      class="ingredients-add"       id="grilled-add" onclick="openGrilledIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="grilled-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="grilled-subtract"  onclick="closeGrilledIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="grilled-ingredients">(Sliced Chicken Breasts, Your Choice of Toppings, Dressings, Cheese)</p>
+                <!--HOT LINK-->
+                <p      class="price-grinder"><strong>#19 HOT LINKS:</strong><br>8 Inch Price: $7.62<br>16 Inch Price: $15.14<br>24 Inch Price: $22.76</p>
+                <div    class="ingredients-container" id="hot-add-container">
+                <p      class="ingredients-add"       id="hot-add" onclick="openHotIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="hot-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="hot-subtract"  onclick="closeHotIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="hot-ingredients">(Sliced Hot Links, Your Choice of Toppings, Dressings, Cheese) (TRY IT WITH OUR BBQ SAUCE)</p>
+                <!--MEATBALL-->
+                <p      class="price-grinder"><strong>#20 MEATBALL:</strong><br>8 Inch Price: $7.62<br>16 Inch Price: $15.14<br>24 Inch Price: $22.76</p>
+                <div    class="ingredients-container" id="meat-add-container">
+                <p      class="ingredients-add"       id="meat-add" onclick="openMeatIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="meat-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="meat-subtract"  onclick="closeMeatIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="meat-ingredients">(Beef Meatballs, Marinara Sauce, Provolone, Mozzarella Cheese)</p>
+                <!--PIZZA SUB-->
+                <p      class="price-grinder"><strong>#21 PIZZA SUB:</strong><br>8 Inch Price: $7.62<br>16 Inch Price: $15.14<br>24 Inch Price: $22.76</p>
+                <div    class="ingredients-container" id="pizza-add-container">
+                <p      class="ingredients-add"       id="pizza-add" onclick="openPizzaIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="pizza-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="pizza-subtract"  onclick="closePizzaIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="pizza-ingredients">(Pepperoni, Marinara, Onion, Mushroom, Bell Pepper, Black Olives, Provolone, Mozzarella Cheese)</p>
+                <!--GYRO WRAP OR SUB-->
+                <p      class="price-grinder"><strong>#22 GYRO WRAP OR SUB:</strong><br>8 Inch Price: $7.39<br>16 Inch Price: $14.68<br>24 Inch Price: $22.07</p>
+                <div    class="ingredients-container" id="gyro-add-container">
+                <p      class="ingredients-add"       id="gyro-add" onclick="openGyroIngredients()">Ingredients<span class="material-symbols-outlined notranslate" id="prosub-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="gyro-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="gyro-subtract"  onclick="closeGyroIngredients()">Ingredients<span class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="gyro-ingredients">(Sliced Beef Gyro, Lettuce, Tomato, Onion, Tzatziki Sauce, Shredded Cheese) (Wrap = 6 inches)</p>
+                <!--EXTRAS-->
+                <h3 class="hot-sub-h3">EXTRAS:</h3>
+                <p class="price-prosub"><strong>EXTRA MEAT:</strong><br>$2.00 & UP (PER 8 INCH SUB)</p>
+                <p class="price-prosub"><strong>EXTRA CHEESE:</strong><br>$1.00 & UP (PER 8 INCH SUB)</p>
                 </div>
 
         <div class="flex-container-menu wings-container">
