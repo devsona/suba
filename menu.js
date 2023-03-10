@@ -138,3 +138,107 @@ function closeVeggieSubIngredients() {
     const ingredientsContainer = document.getElementById('veggie-ingredients').style.display = 'none';
     const subtractContainer = document.getElementById('veggie-subtract-container').style.display = 'none'
 }
+// subburder 
+function openSubBurgerIngredients() {
+    const addContainer = document.getElementById('subburger-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('subburger-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('subburger-subtract-container').style.display = 'flex'
+}
+function closeSubBurgerIngredients() {
+    const addContainer = document.getElementById('subburger-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('subburger-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('subburger-subtract-container').style.display = 'none'
+}
+// cheese steak 
+function openCheeseSteakIngredients() {
+    const addContainer = document.getElementById('cheeseSteak-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('cheeseSteak-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('cheeseSteak-subtract-container').style.display = 'flex'
+}
+function closeCheeseSteakIngredients() {
+    const addContainer = document.getElementById('cheeseSteak-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('cheeseSteak-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('cheeseSteak-subtract-container').style.display = 'none'
+}
+// fajita sub
+function openFajitaIngredients() {
+    const addContainer = document.getElementById('fajita-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('fajita-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('fajita-subtract-container').style.display = 'flex'
+}
+function closeFajitaIngredients() {
+    const addContainer = document.getElementById('fajita-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('fajita-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('fajita-subtract-container').style.display = 'none'
+}
+// Turkey & Bacon
+function openTurkeyIngredients() {
+    const addContainer = document.getElementById('turkey-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('turkey-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('turkey-subtract-container').style.display = 'flex'
+}
+function closeTurkeyIngredients() {
+    const addContainer = document.getElementById('turkey-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('turkey-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('turkey-subtract-container').style.display = 'none'
+}
+// GRILLED CHIKEN
+function openGrilledIngredients() {
+    const addContainer = document.getElementById('grilled-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('grilled-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('grilled-subtract-container').style.display = 'flex'
+}
+function closeGrilledIngredients() {
+    const addContainer = document.getElementById('grilled-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('grilled-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('grilled-subtract-container').style.display = 'none'
+}
+// Hot links
+function openHotIngredients() {
+    const addContainer = document.getElementById('hot-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('hot-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('hot-subtract-container').style.display = 'flex'
+}
+function closeHotIngredients() {
+    const addContainer = document.getElementById('hot-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('hot-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('hot-subtract-container').style.display = 'none'
+}
+// meat ball
+function openMeatIngredients() {
+    const addContainer = document.getElementById('meat-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('meat-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('meat-subtract-container').style.display = 'flex'
+}
+function closeMeatIngredients() {
+    const addContainer = document.getElementById('meat-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('meat-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('meat-subtract-container').style.display = 'none'
+}
+// pizza sub
+function openPizzaIngredients() {
+    const addContainer = document.getElementById('pizza-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('pizza-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('pizza-subtract-container').style.display = 'flex'
+}
+function closePizzaIngredients() {
+    const addContainer = document.getElementById('pizza-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('pizza-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('pizza-subtract-container').style.display = 'none'
+}
+// gyro or sub 
+function openGyroIngredients() {
+    const addContainer = document.getElementById('gyro-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('gyro-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('gyro-subtract-container').style.display = 'flex'
+}
+function closeGyroIngredients() {
+    const addContainer = document.getElementById('gyro-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('gyro-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('gyro-subtract-container').style.display = 'none'
+}
+// side 
+function openExtraDetails(){
+    const details = document.getElementById('menu-list-subs')
+    details.style.display = 'flex'
+}

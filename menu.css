@@ -29,6 +29,7 @@ body,html {
 #home {
     font-size: 2.2rem !important;
     text-align: center !important;
+    color: black;
 }
 h1 {
     color: white;
@@ -230,6 +231,23 @@ h3 {
     margin: auto;
     background-color: #107996;
     display: none;
+}
+.backtotop{
+    display: flex;
+    align-items: center;
+    background-color: rgb(160, 0, 0);
+    cursor: pointer;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.backtotop-a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
 }
 
 /* FOOTER */
