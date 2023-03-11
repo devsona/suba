@@ -13,13 +13,16 @@ let day = dateObj.toDateString().substring(0,3);
 let elDay = document.getElementById('day');
 elDay.innerHTML = 'Today is: ' + day;
 function addDay(){
-    if (day === 'Sun' || day === 'Mon'){
+    if (day === 'Sun' || day === 'Mon' || day === 'Fri'){
         day += 'day'
         return elDay.innerHTML = 'Today is: ' + day;
     } else if (day === 'Thu') {
         day = 'Thursday'
         return elDay.innerHTML = 'Today is: ' + day;
-    } else {
+    } else if (day === 'Sat'){
+        day += 'urday'
+        return elDay.innerHTML = 'Today is: ' + day;
+    }else {
         day += 'sday'
         return elDay.innerHTML = 'Today is: ' + day;
     }
