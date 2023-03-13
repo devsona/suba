@@ -3,6 +3,7 @@
 /* great vibes font */
  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
@@ -135,6 +136,8 @@ h3 {
     top: 15%;
     left: 11.5%;
     overflow-y: scroll;
+    max-width: 46rem;
+    display: none;
 }
 .sub-heading {
     text-align: center;
@@ -249,7 +252,27 @@ h3 {
     text-decoration: none;
 
 }
-
+.button-flex-sub{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.top-button-sub{
+    background-color: rgb(177, 1, 1);
+    font-size: 1.2rem;
+    color: white;
+    border: solid rgb(0, 0, 0) 1px;
+}
+#rice-container {
+    
+}
+#Sub-h2{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
 /* FOOTER */
 footer {
     display: flex;

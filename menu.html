@@ -22,12 +22,16 @@
     </nav>
     <h1>Menu Items</h1>
     <section class="flex-container-menu-items">
-        <div class="open-menu-list-subs-contain" id="menu-list-subs"></div>
         <div class="flex-container-menu subs-container">
             <a href="#" onclick="openMenu()"><h2 class="h2 part">Subs</h2></a>
         </div>
             <div class="sub-div-con" id="sub-section">
-                <div style="display: block;" class="sub-side-contain"><div class="side-list-container-subs"><span class="material-symbols-outlined" onclick="openExtraDetails()">sort</span></div></div>
+                <h2 id="Sub-h2">Create Your own or choose a preset</h2>
+                <div class="button-flex-sub">
+                <button class="top-button-sub">Toppings</button>
+                <button class="top-button-sub">Dressings</button>
+                <button class="top-button-sub">Cheeses</button>
+                </div>
                 <div class="sub-heading-container"><h3 class="sub-heading">COLD CUT SUBS</h3><span onclick="closeMenu()" class="material-symbols-outlined close notranslate">close</span></div>
                 <p class="scroll-toview" id="more">(Scroll to view more)</p>
                 <!--PROSUB CONTAINER-->
@@ -210,13 +214,65 @@
                 <p class="price-prosub"><strong>EXTRA CHEESE:</strong><br>$1.00 & UP (PER 8 INCH SUB)</p>
                 <a href="#more" class="backtotop-a"><button class="backtotop">Back To Top<span class="material-symbols-outlined notranslate">expand_less</span></button></a>
                 </div>
-
+            
         <div class="flex-container-menu wings-container">
-            <a href="#"><h2 class="h2 part">Wings</h2></a>
+            <a href="#" onclick="openWingsMenu()"><h2 class="h2 part">Wings</h2></a>
+            <div class="sub-div-con" id="wings-section">
+                <div class="sub-heading-container"><h3 class="sub-heading">Wings</h3><span onclick="closeWingsMenu()" class="material-symbols-outlined close notranslate">close</span></div>
+                <!--WINGS CONTAINER-->
+                <p      class="price-prosub"><strong>#77 CHICKEN WINGS & FRIES:</strong><br>(6 PIECES WITH FRIES): $10.16<br>(8 PIECES NO FRIES): $10.16</p>
+                <div    class="ingredients-container" id="wings-add-container">
+                <p      class="ingredients-add"       id="wings-add"       onclick="openWingsIngredients()">Flavors & Sides<span class="material-symbols-outlined notranslate" id="wings-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="wings-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="wings-subtract"  onclick="closeWingsIngredients()">Flavors & Sides<span id="wings-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="wings-ingredients">(Flavors: Hot, BBQ, Lemon Pepper)<br>(1 Side of Ranch or Honey Mustard)</p>
+        </div>
         </div>
 
+
         <div class="flex-container-menu rice-container">
-            <a href="#"><h2 class="h2 part">Rice</h2></a>
+            <a href="#" onclick="openRiceMenu()"><h2 class="h2 part">Rice</h2></a>
+            <div class="sub-div-con" id="rice-section">
+                <div class="sub-heading-container"><h3 class="sub-heading">Rice</h3><span onclick="closeRiceMenu()" class="material-symbols-outlined close notranslate">close</span></div>
+                <!--RICE CONTAINER-->
+                <p      class="price-prosub" style="display: flex;"><strong>#67 COMBINATION FRIED RICE:</strong>$11.99</p>
+                <div    class="ingredients-container" id="fried-add-container">
+                <p      class="ingredients-add"       id="fried-add"       onclick="openFriedIngredients()">Flavors & Sides<span class="material-symbols-outlined notranslate" id="fried-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="fried-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="fried-subtract"  onclick="closeFriedIngredients()">Flavors & Sides<span id="fried-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="fried-ingredients">(Fried Rice, Egg, Onion, Peas, Carrots, Beef, Chicken & Shrimp)</p>
+                <!--CHICKEN, BEEF OR SHRIMP FRIED RICE-->
+                <p      class="price-prosub" style="display: flex;"><strong>#68 CHICKEN, BEEF OR SHRIMP FRIED RICE:</strong>$10.16</p>
+                <div    class="ingredients-container" id="friedCBS-add-container">
+                <p      class="ingredients-add"       id="friedCBS-add"       onclick="openFriedCBSIngredients()">Flavors & Sides<span class="material-symbols-outlined notranslate" id="friedCBS-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="friedCBS-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="friedCBS-subtract"  onclick="closeFriedCBSIngredients()">Flavors & Sides<span id="friedCBS-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="friedCBS-ingredients">(Fried Rice, Egg, Onion, Peas, Carrot & Your Choice Of 1 Meat)</p>
+                <!--COMBINATION STEAMED RICE -->
+                <p      class="price-prosub" style="display: flex;"><strong>#69 COMBINATION STEAMED RICE:</strong>$11.99</p>
+                <div    class="ingredients-container" id="steam-add-container">
+                <p      class="ingredients-add"       id="steam-add"       onclick="openSteamIngredients()">Flavors & Sides<span class="material-symbols-outlined notranslate" id="steam-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="steam-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="steam-subtract"  onclick="closeSteamIngredients()">Flavors & Sides<span id="steam-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="steam-ingredients">(Steamed White Rice, Onion, Mushroom, Bell Pepper, Peas, Carrot, Beef, Chicken & Shrimp)</p>
+                <!--CHICKEN, BEEF OR SHRIMP STEAMED RICE-->
+                <p      class="price-prosub" style="display: flex;"><strong>#70 CHICKEN, BEEF OR SHRIMP STEAMED RICE:</strong>$10.16</p>
+                <div    class="ingredients-container" id="steamCBS-add-container">
+                <p      class="ingredients-add"       id="steamCBS-add"       onclick="openSteamCBSIngredients()">Flavors & Sides<span class="material-symbols-outlined notranslate" id="steamCBS-add-icon">add</span></p>
+                </div>
+                <div    class="ingredients-container" id="steamCBS-subtract-container" style="display: none;">
+                    <p  class="ingredients-add"       id="steamCBS-subtract"  onclick="closeSteamCBSIngredients()">Flavors & Sides<span id="steamCBS-sub-icon" class="material-symbols-outlined notranslate">remove</span></p>
+                </div>
+                <p      class="ingredients-list"      id="steamCBS-ingredients"> (Steamed White Rice, Onion, Mushroom, Bell Pepper, Peas, Carrot & Your Choice Of 1 Meat)</p>
+        </div>
         </div>
 
         <div class="flex-container-menu salad-container">

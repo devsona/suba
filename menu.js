@@ -242,3 +242,75 @@ function openExtraDetails(){
     const details = document.getElementById('menu-list-subs')
     details.style.display = 'flex'
 }
+// wings opener
+let wingsCloser = document.getElementById('wings-section')
+function closeWingsMenu(){
+   wingsCloser.style.display = 'none'
+}
+function openWingsMenu(){
+    wingsCloser.style.display = 'block'
+}
+// wings flavor 
+function openWingsIngredients() {
+    const addContainer = document.getElementById('wings-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('wings-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('wings-subtract-container').style.display = 'flex'
+}
+function closeWingsIngredients() {
+    const addContainer = document.getElementById('wings-add-container').style.display = 'flex';
+    const ingredientsContainer = document.getElementById('wings-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('wings-subtract-container').style.display = 'none';
+}
+// rice opener
+let riceCloser = document.getElementById('rice-section')
+function openRiceMenu(){
+    riceCloser.style.display = 'block'
+}
+function closeRiceMenu(){
+    riceCloser.style.display = 'none'
+}
+
+// fried rice
+function openFriedIngredients() {
+    const addContainer = document.getElementById('fried-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('fried-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('fried-subtract-container').style.display = 'flex'
+}
+function closeFriedIngredients() {
+    const addContainer = document.getElementById('fried-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('fried-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('fried-subtract-container').style.display = 'none'
+}
+// fried rice cbs
+function openFriedCBSIngredients() {
+    const addContainer = document.getElementById('friedCBS-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('friedCBS-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('friedCBS-subtract-container').style.display = 'flex'
+}
+function closeFriedCBSIngredients() {
+    const addContainer = document.getElementById('friedCBS-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('friedCBS-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('friedCBS-subtract-container').style.display = 'none'
+}
+// steam rice
+function openSteamIngredients() {
+    const addContainer = document.getElementById('steam-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('steam-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('steam-subtract-container').style.display = 'flex'
+}
+function closeSteamIngredients() {
+    const addContainer = document.getElementById('steam-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('steam-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('steam-subtract-container').style.display = 'none'
+}
+// stean rice cbs
+function openSteamCBSIngredients() {
+    const addContainer = document.getElementById('steamCBS-add-container').style.display = 'none'
+    const ingredientsContainer = document.getElementById('steamCBS-ingredients').style.display = 'block';
+    const subtractContainer = document.getElementById('steamCBS-subtract-container').style.display = 'flex'
+}
+function closeSteamCBSIngredients() {
+    const addContainer = document.getElementById('steamCBS-add-container').style.display = 'flex'
+    const ingredientsContainer = document.getElementById('steamCBS-ingredients').style.display = 'none';
+    const subtractContainer = document.getElementById('steamCBS-subtract-container').style.display = 'none'
+}
