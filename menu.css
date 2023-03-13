@@ -129,13 +129,14 @@ h3 {
 }
 .sub-div-con {
     height: 75vh;
-    width: 80%;
+    width: 85%;
     background-color: white;
     z-index: 5;
     position: absolute;
     top: 15%;
-    left: 11.5%;
+    left: 8%;
     overflow-y: scroll;
+    overflow-x: hidden;
     max-width: 46rem;
     display: none;
 }
@@ -266,7 +267,7 @@ h3 {
     border: solid rgb(0, 0, 0) 1px;
 }
 #rice-container {
-    
+
 }
 #Sub-h2{
     font-size: 0.8rem;
@@ -282,7 +283,7 @@ footer {
 .review-container{
     width: 95%;
     border-radius: 1rem;
-    background-color: peachpuff;
+    background-color: #4a0000;
     height: 5rem;
     display: flex;
     align-items: center;
