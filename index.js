@@ -73,8 +73,12 @@ ifDayTurnBolded();
 
 
 
-
-
+function googleMaps(){
+    window.open('https://www.google.com/maps/place/Sub+A/@32.8090742,-96.9265156,17z/data=!3m1!4b1!4m5!3m4!1s0x864e834d8f41afc7:0x7517c1a5c2e9f94d!8m2!3d32.8090697!4d-96.9243269')
+}
+function appleMap(){
+    window.open('http://maps.apple.com/?q=Sub+A')
+}
 function goToMenuHtml(){
     if(confirm("Leaving page to view menu")) document.location = 'menu.html';
 }
